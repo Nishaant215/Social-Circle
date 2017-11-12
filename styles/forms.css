@@ -28,12 +28,26 @@ button#left{
 	display: none;
 }
 
-/* SLIDER STYLE */
-
-.slider{
-	width: 34%;
+#send{
+	height: 4em;
+	width: 4em;
 	position: absolute;
-	top: 12em;
-	left: 33%;
-	font-size: 1.2em;
+	top: 17.2em;
+	left: 44.5%;
+	width: 10em;
+	
+	border-radius: 2em;
+	background: none;
+}
+
+/* DUAL HEIGHT INPUT FORMAT */
+
+#ft, #in{
+	width: 5em;
+}
+#ft{
+	left: 41%;
+}
+#in{
+	left: 51%;
 }

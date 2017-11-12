@@ -24,24 +24,54 @@
 			<form action="/action_page.php">
 				<div id="step1" style="display:inline;">
 					<h2>Which medical condition do you have?</h2>
-					<select>
+					<select name="condition">
 						<option value="High Cholesterol">High Cholesterol</option>
 						<option value="High Blood Pressure">High Blood Pressure</option>
-						<option value="Diabetes Types One">Diabetes Type One</option>
-						<option value="Diabetes Types Two">Diabetes Type Two</option>
+						<option value="Diabetes Types One">Diabetes - Type I</option>
+						<option value="Diabetes Types Two">Diabetes - Type II</option>
 						<option value="Irritable Bowl Syndrome">Irritable Bowel Syndrome</option>
 					</select>
 				</div>
 				<div id="step2" style="display:none;">
 					<h2>Are you male or female?</h2>
-					<select>
-						<option value="Male">Male</option>
-						<option value="Female">Female</option>
+					<select name="gender">
+						<option value="Boy">Male</option>
+						<option value="Girl">Female</option>
 					</select>
 				</div>
 				<div id="step3" style="display:none;">
 					<h2>How tall are you?</h2>
-					<input class="slider" type="range" min="0" max="98">
+					<select id="ft" name="h_ft">
+						<option value="1">1 ft</option>
+						<option value="2">2 ft</option>
+						<option value="3">3 ft</option>
+						<option value="4">4 ft</option>
+						<option value="5">5 ft</option>
+						<option value="6">6 ft</option>
+						<option value="7">7 ft</option>
+					</select>
+					<select id="in" name="h_in">
+						<option value="0">0 in</option>
+						<option value="1">1 in</option>
+						<option value="2">2 in</option>
+						<option value="3">3 in</option>
+						<option value="4">4 in</option>
+						<option value="5">5 in</option>
+						<option value="6">6 in</option>
+						<option value="7">7 in</option>
+						<option value="8">8 in</option>
+						<option value="9">9 in</option>
+						<option value="10">10 in</option>
+						<option value="11">11 in</option>
+					</select>
+				</div>
+				<div id="step4" style="display:none;">
+					<h2>How much do you weigh?</h2>
+					<input type="number" name="w_lb">
+				</div>
+				<div id="step5" style="display:none;">
+					<h2>All set!</h2>
+					<input id="send" type="submit" value="Continue">
 				</div>
 			</form>
 			<button onClick="goForward()" id="right">&#8594;</button>
