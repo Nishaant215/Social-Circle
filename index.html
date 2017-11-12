@@ -2,35 +2,43 @@
 
 <html lang="en">
 <head>
-        
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script>
-        function onSignIn(googleUser) {
-        var profile = googleUser.getBasicProfile();
-        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-        console.log('Name: ' + profile.getName());
-        console.log('Image URL: ' + profile.getImageUrl());
-        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-}
-    }
-
-    </script>
-    <link rel = "CSSformain.css" href =  "HACKATHON/CSSformain.css">
-    <meta name="google-signin-client_id" content="211720649504-f7isiocsovoqoi02ou98r07vlfueh1fg.apps.googleusercontent.com">   
+    <meta charset="utf-8">
+    <title>Circle</title>
+    
+    <link rel = "shortcut icon" href = "/favicon.ico">
+    <link type = "text/css" rel =  "stylesheet" href= "style.css" media= "screen"> 
     
 </head>
  
 
 <body>
-   <header> 
-            <title>Circle</title>
+    <main id="home">
+    <header> 
+       <h1>
+        What's On My Circle? 
+        <img src= "Plate.png" alt = "Plate" > 
+        </h1> 
+        <h2>
+        What medical conditions do you have: 
+        </h2>
         
-    
+            <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">High Cholesterol</a>
+                <a href="#">High Blood Pressure</a>
+                <a href="#">Diabetes Type One</a>
+                <a href="#">Diabetes Type Two</a>
+                <a href="#">Irritable Bowel Syndrome</a>
+            </div>
+            </div>
+        
+        
     </header>
  
-    <main>
+
         
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        
     </main>
 
 </body>
