@@ -1,0 +1,39 @@
+select{
+	width: 34%;
+	position: absolute;
+	top: 12em;
+	left: 33%;
+	font-size: 1.2em;
+	
+	border: none;
+	border-bottom: groove;
+	border-bottom-left-radius: 0.4em;
+}
+button#right, button#left{
+	position: absolute;
+	font-size: 1.2em;
+	top: 12em;
+	right: 28%;
+	border-radius: 1em;
+	border-style: outset;
+	border-color: white;
+	background: none;
+}
+button#right:hover, button#left:hover{
+	border-style: inset;
+	background-color: #EDEDED; /* very light grey */
+}
+button#left{
+	left: 28%;
+	display: none;
+}
+
+/* SLIDER STYLE */
+
+.slider{
+	width: 34%;
+	position: absolute;
+	top: 12em;
+	left: 33%;
+	font-size: 1.2em;
+}

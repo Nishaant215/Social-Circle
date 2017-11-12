@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Circle</title>
+		<link rel = "shortcut icon" href = "/favicon.ico">
+
+		<link type="text/css" rel="stylesheet" href="styles/base.css" media="screen">
+		<link type="text/css" rel="stylesheet" href="styles/forms.css" media="screen">
+		
+		<script type="text/javascript" src="js/inputPath.js"></script>
+	</head>
+ 
+
+	<body>
+		<header> 
+			<h1>What's On My Circle?</h1>
+			<img src="assets-img/background.png">
+		</header>
+			
+		<main id="home">
+			<button onclick="goBack()" id="left">&#8592;</button>
+			<form action="/action_page.php">
+				<div id="step1" style="display:inline;">
+					<h2>Which medical condition do you have?</h2>
+					<select>
+						<option value="High Cholesterol">High Cholesterol</option>
+						<option value="High Blood Pressure">High Blood Pressure</option>
+						<option value="Diabetes Types One">Diabetes Type One</option>
+						<option value="Diabetes Types Two">Diabetes Type Two</option>
+						<option value="Irritable Bowl Syndrome">Irritable Bowel Syndrome</option>
+					</select>
+				</div>
+				<div id="step2" style="display:none;">
+					<h2>Are you male or female?</h2>
+					<select>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select>
+				</div>
+				<div id="step3" style="display:none;">
+					<h2>How tall are you?</h2>
+					<input class="slider" type="range" min="0" max="98">
+				</div>
+			</form>
+			<button onClick="goForward()" id="right">&#8594;</button>
+		</main>
+	</body>
+</html>
+
