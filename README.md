@@ -1,2 +1,2 @@
-# Circle
-Circle is an online website that allows people to connect with friends and new people to arrange fun social event for anyone.
+# My Circle
+An application that takes in user's health condition then generates a list of healthy food options. 
