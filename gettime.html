@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>What's on My Circle</title>
+    
+    <link rel = "shortcut icon" href = "/favicon.ico">
+    <link type = "text/css" rel =  "stylesheet" href= "style.css" media= "screen"> 
+    
+</head>
+    
+<body>
+    <header>
+        [Insert Disease Here]
+        
+    </header>
+    <main>
+        <script>
+                var d = new Date();
+            
+                if (( 5 < d.getHours()) && (d.getHours() <= 11)){ 
+                window.location.replace('breakfast.html');} 
+ 
+                else if((11< d.getHours()) && (d.getHours()<= 15)){
+                window.location.replace('lunch.html');}
+ 
+                else if((15< d.getHours()) && (d.getHours()<=17)){
+                window.location.replace('dinner.html');}
+ 
+                else {
+                window.location.replace('snack.html');}
+        </script>
+            
+            
+    </main>
+</body>
+    
+</html>

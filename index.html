@@ -21,7 +21,7 @@
 			
 		<main id="home">
 			<button onclick="goBack()" id="left">&#8592;</button>
-			<form action="/action_page.php">
+			<form action="results.php" method="post">
 				<div id="step1" style="display:inline;">
 					<h2>Which medical condition do you have?</h2>
 					<select name="condition">
@@ -67,7 +67,34 @@
 				</div>
 				<div id="step4" style="display:none;">
 					<h2>How much do you weigh?</h2>
-					<input type="number" name="w_lb">
+					<select name="w_lb">
+						<option value="50">50 lbs</option>
+						<option value="60">60 lbs</option>
+						<option value="70">70 lbs</option>
+						<option value="80">80 lbs</option>
+						<option value="90">90 lbs</option>
+						<option value="100">100 lbs</option>
+						<option value="110">110 lbs</option>
+						<option value="120">120 lbs</option>
+						<option value="130">130 lbs</option>
+						<option value="140">140 lbs</option>
+						<option value="150">150 lbs</option>
+						<option value="160">160 lbs</option>
+						<option value="170">170 lbs</option>
+						<option value="180">180 lbs</option>
+						<option value="190">190 lbs</option>
+						<option value="200">200 lbs</option>
+						<option value="210">210 lbs</option>
+						<option value="220">220 lbs</option>
+						<option value="230">230 lbs</option>
+						<option value="240">240 lbs</option>
+						<option value="250">250 lbs</option>
+						<option value="260">260 lbs</option>
+						<option value="270">270 lbs</option>
+						<option value="280">280 lbs</option>
+						<option value="290">290 lbs</option>
+						<option value="300">300 lbs</option>
+					</select>
 				</div>
 				<div id="step5" style="display:none;">
 					<h2>All set!</h2>
